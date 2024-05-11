@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+  background-color: transparent;
+}
+@font-face {
+  font-family: marvel;
+  src: url(/fonts/MarvelRegular-Dj83.ttf);
+}
+div#contenedor{
+  background-color: #F03A47;
+  width: 1170px;
+  margin: 0px auto;
+  height: 225px;
+}
+div#menu{
+  width: 970px; 
+}
+#contenido-adicional {
+  float: right;
+  width: calc(100% - 200px); /* 100% del ancho menos el ancho de la imagen */
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  float: left;
+  background-color: #F03A47;
+}
+*{
+  font-family: marvel;
+}
+/*menu*/
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #02020E;
+  text-decoration: none;
+}
+a.menu{
+  width: 163px;
+}
+a.submenu{
+  width: 163px;
+}
+nav ul li:hover {
+  background-color: #5D737E;
+}
+
+/*submenu*/
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #5D737E;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul ul li a {
+  padding: 10px 20px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li ul li:hover {
+ background-color: white;
+}
+.limpiar{
+  clear: both;
+}
