@@ -1,0 +1,4 @@
+#F69299 base
+#F03A47 principal
+#3AF075 ancentuar
+#3A8FF0 acentuar
