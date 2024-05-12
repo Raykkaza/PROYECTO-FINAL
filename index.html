@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            margin: 0px auto;
+            font-family: marvel;
+        }
+        @font-face {
+  font-family: marvel;
+  src: url(/fonts/MarvelRegular-Dj83.ttf);
+}
+        #contenedor{
+            background-color: gold;
+            border: 1px solid blue;
+            width: 1070px;
+            height: 1300px;
+        }
+        #galeria{
+            background-color: aqua;
+            border: 1px solid red;
+            float: left;
+            height: 450px;
+            width: 500px;
+            margin: 10px;
+        }
+        .foto {
+            background-color: red;
+            float: left;
+            border: 1px solid black;
+            width: 60px;
+            height: 150px;
+            padding: 20px;
+            margin: 10px;
+        }
+        .limpiar{
+            clear: both;
+        }
+        #articulos {
+            background-color: white;
+            border: 1px solid green;
+            float: right;
+            padding: 10px;
+            width: 250px; 
+            height: 900px;
+        }
+        #articulos article {
+            background-color: violet;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+
+
+    </style>
+</head>
+<?php
+include ("menu.html")
+?>
+<body>
+    <div id="contenedor">
+        <div id="galeria">
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <p class="limpiar"></p>
+        </div>
+        <div id="articulos">
+            <article>Hola</article>
+            <article>Hola</article>
+            <article>Hola</article>
+            <article>Hola</article>
+            <article>Hola</article>
+        </div>
+        <p class="limpiar"></p>
+    </div>
+</body>
+</html>
