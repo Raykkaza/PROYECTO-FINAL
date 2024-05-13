@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             margin: 0px auto;
-            font-family: marvel;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        @font-face {
-  font-family: marvel;
-  src: url(/fonts/MarvelRegular-Dj83.ttf);
-}
-        #contenedor{
-            background-color: gold;
+
+        #contenedor {
+            background-color: whitesmoke;
             border: 1px solid blue;
             width: 1070px;
             height: 1300px;
         }
-        #galeria{
-            background-color: aqua;
-            border: 1px solid red;
+
+        #galeria {
+            background-color: #F03A47;
             float: left;
-            height: 450px;
-            width: 500px;
+            height: 426px;
+            width: 735px;
             margin: 10px;
         }
+
         .foto {
-            background-color: red;
+            background-size: cover;
+            background-position: center;
             float: left;
             border: 1px solid black;
             width: 60px;
@@ -39,29 +39,90 @@
             padding: 20px;
             margin: 10px;
         }
-        .limpiar{
+
+        .limpiar {
             clear: both;
         }
+
         #articulos {
             background-color: white;
             border: 1px solid green;
+            margin-right: 11px;
             float: right;
+            margin-top: 10px;
             padding: 10px;
-            width: 250px; 
-            height: 900px;
+            width: 280px;
+            height: 1254px;
         }
+
         #articulos article {
             background-color: violet;
             border: 1px solid black;
             margin-top: 30px;
         }
 
+        #presentacion {
+            border: 1px solid black;
+            background-color: grey;
+            width: 735px;
+            height: 835px;
+            float: left;
+            margin-left: 10px;
+        }
 
+        #galeria :nth-child(1) {
+            background-image: url(img/portadas/IndexGaleria/daredevil.jpg);
+        }
+
+        #galeria :nth-child(2) {
+            background-image: url(img/portadas/IndexGaleria/secret-wars-xx.png);
+        }
+
+        #galeria :nth-child(3) {
+            background-image: url(img/portadas/IndexGaleria/captain-america-321.png);
+        }
+
+        #galeria :nth-child(4) {
+            background-image: url(img/portadas/IndexGaleria/iluminatis.jpg);
+        }
+
+        #galeria :nth-child(5) {
+            background-image: url(img/portadas/IndexGaleria/avengers2023.jpg);
+        }
+
+        #galeria :nth-child(6) {
+            background-image: url(img/portadas/IndexGaleria/tonystark.jpg);
+        }
+
+        #galeria :nth-child(7) {
+            background-image: url(img/portadas/IndexGaleria/ThorGoT.jpg);
+        }
+
+        #galeria :nth-child(8) {
+            background-image: url(img/portadas/IndexGaleria/moonknight1.jpg);
+        }
+
+        #galeria :nth-child(9) {
+            background-image: url(img/portadas/IndexGaleria/spiderman1.jpg);
+        }
+
+        #galeria :nth-child(10) {
+            background-image: url(img/portadas/IndexGaleria/hulk1.jpg);
+        }
+
+        #galeria :nth-child(11) {
+            background-image: url(img/portadas/IndexGaleria/deadpool1.jpg);
+        }
+
+        #galeria :nth-child(12) {
+            background-image: url(img/portadas/IndexGaleria/drStrange1.jpg);
+        }
     </style>
 </head>
 <?php
 include ("menu.html")
 ?>
+
 <body>
     <div id="contenedor">
         <div id="galeria">
@@ -73,16 +134,24 @@ include ("menu.html")
             <div class="foto"></div>
             <div class="foto"></div>
             <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
             <p class="limpiar"></p>
         </div>
         <div id="articulos">
-            <article>Hola</article>
-            <article>Hola</article>
-            <article>Hola</article>
-            <article>Hola</article>
-            <article>Hola</article>
+            <article>Artículo1</article>
+            <article>Artículo2</article>
+            <article>Artículo3</article>
+            <article>Artículo4</article>
+            <article>Artículo5</article>
+        </div>
+        <div id="presentacion">
+            <p>Aquí va la presentación para la página (con formato de texto hecho y demás)</p>
         </div>
         <p class="limpiar"></p>
     </div>
 </body>
+
 </html>
